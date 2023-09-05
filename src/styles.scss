@@ -1,4 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+// Variable overrides first
+$primary: #900;
+$enable-shadows: true;
+$prefix: "mo-";
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+// use bootstrap styles and icons
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import "bootstrap-icons/font/bootstrap-icons.css";
+
+html, body {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
+
+.calc-header span {
+  font-weight: bold;
+  border: 1px solid black;
+  width: auto;
+}
+
+.semester {
+  font-weight: bold;
+  padding: 0.5rem 0 0 1rem;
+}
+
+.modul {
+  padding: 0.5rem 0 0 2rem;
+  margin: 0;
+}
+
+.fach {
+  padding-left: 3rem;
+}
+
+.modul-col {
+  float: none;
+}

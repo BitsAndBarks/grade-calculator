@@ -1,3 +1,14 @@
-.row {
-  display: flex;
+.calc-design {
+  margin: 10% 25% 25%;
+  border: 2px solid #9370DB;
+  border-radius: 20px;
+  transition: background-color 0.3s;
+  overflow: hidden;
+}
+
+
+.calc-design:hover {
+  box-shadow:
+    0 6px 8px rgba(0, 0, 0, 0.13),
+    0 8px 20px rgba(0, 0, 0, 0.09);
 }
