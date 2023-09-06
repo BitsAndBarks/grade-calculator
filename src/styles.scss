@@ -1,10 +1,6 @@
-/* You can add global styles to this file, and also import other style files */
-// Variable overrides first
-$primary: #900;
-$enable-shadows: true;
-$prefix: "mo-";
-
 // use bootstrap styles and icons
+/* Importing Bootstrap SCSS file. */
+@import 'bootstrap/scss/bootstrap';
 @import "../node_modules/bootstrap/scss/bootstrap";
 @import "bootstrap-icons/font/bootstrap-icons.css";
 
@@ -17,10 +13,13 @@ body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
 
-.calc-header span {
+button.bi {
+  background: none;
+  border: none;
+}
+
+.calc-header {
   font-weight: bold;
-  border: 1px solid black;
-  width: auto;
 }
 
 .semester {
@@ -40,3 +39,36 @@ body {
 .modul-col {
   float: none;
 }
+
+.custom-tooltip .tooltip-inner {
+  color: black;
+  background-color: lightgrey;
+  font-size: 75%;
+}
+.custom-tooltip.bs-tooltip-end .tooltip-arrow::before {
+  border-right-color: lightgrey;
+}
+.custom-tooltip.bs-tooltip-start .tooltip-arrow::before {
+  border-left-color: lightgrey;
+}
+.custom-tooltip.bs-tooltip-top .tooltip-arrow::before {
+  border-top-color: lightgrey;
+}
+.custom-tooltip.bs-tooltip-bottom .tooltip-arrow::before {
+  border-bottom-color: lightgrey;
+}
+
+.form-check-input[type='checkbox'] {
+  border-color: grey;
+  box-shadow: none;
+}
+.form-check-input[type='checkbox']:checked {
+  background-color: green;
+  border-color: green;
+  box-shadow: none;
+}
+.form-check-input:hover {
+  cursor: pointer;
+}
+
+

@@ -8,6 +8,7 @@ import { GrundstudiumComponent } from './grundstudium/grundstudium.component';
 import { HauptstudiumComponent } from './hauptstudium/hauptstudium.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatTabsModule } from "@angular/material/tabs";
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { MatTabsModule } from "@angular/material/tabs";
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    MatTabsModule
+    MatTabsModule,
+    NgbModule
   ],
   providers: [],
   bootstrap: [AppComponent]

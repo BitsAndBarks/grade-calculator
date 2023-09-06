@@ -1,12 +1,16 @@
 <div class="container">
   <!-- Header -->
   <div class="row justify-content-end calc-header">
-      <span>
-        BE
-      </span>
-      <span>
-        Speichern <i class="bi bi-question-circle" ></i>
-      </span>
+    <div class="col-1 text-center">
+      BE <i class="bi bi-question-circle"
+            ngbTooltip="Setze für bestandene Leistungen einen Haken."
+            tooltipClass="custom-tooltip"></i>
+    </div>
+    <div class="col-2 text-center">
+      Speichern <i class="bi bi-question-circle"
+                   ngbTooltip="Speichere für neue Berechnungen deine schon im Notenausuzug gespeicherten Noten ab."
+                   tooltipClass="custom-tooltip"></i>
+    </div>
   </div>
 
   <!-- Semester 1 -->
@@ -17,8 +21,15 @@
     <div class="modul">
       Modul x:
     </div>
-    <div class="fach">
+    <div class="col fach">
       Fach y: hier alle Fächer, die zu Modul x gehören.
+    </div>
+    <div class="col-1 text-center">
+      <input class="form-check-input position-static" type="checkbox" id="flexCheckDefault">
+    </div>
+
+    <div class="col-2 text-center">
+      <button class="bi bi-box-arrow-down"></button>
     </div>
   </div>
 
@@ -32,6 +43,6 @@
     Footer
   </div>
 
-
+  auf "benotet"/"nicht benotet" im JSON-File achten!<p></p>
 </div>
 
